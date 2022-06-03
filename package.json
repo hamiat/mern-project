@@ -1,0 +1,30 @@
+{
+  "name": "mern-project",
+  "version": "1.0.0",
+  "description": "An information board.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node backend/server.js",
+    "server" : "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamiat/mern-project.git"
+  },
+  "author": "hami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamiat/mern-project/issues"
+  },
+  "homepage": "https://github.com/hamiat/mern-project#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
