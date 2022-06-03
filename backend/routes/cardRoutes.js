@@ -2,16 +2,11 @@ const express = require('express')
 const router = express.Router()
 const { getCards, setCards, updateCard, deleteCard } = require('../controllers/cardController')
 
-//get requests
-router.get('/', getCards)
+//chaining get and post since same route /
+router.route('/').get(getCards).post(setCards)
 
-//post requests
-router.post('/', setCards)
+//same with put and delete
+router.route('/:id').put(updateCard).delete(deleteCard)
 
-//edit requests
-router.put('/:id', updateCard)
-
-//delete requests
-router.delete('/:id', deleteCard)
 
 module.exports = router
