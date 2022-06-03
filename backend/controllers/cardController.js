@@ -2,6 +2,8 @@
 //@route GET /api/cards
 //access Private
 const getCards = (req, res) => {
+    console.log(req.body)
+
     res.status(200).json({message: 'Get Card'})
 }
 
