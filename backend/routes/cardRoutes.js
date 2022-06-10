@@ -8,5 +8,4 @@ router.route('/').get(getCards).post(setCards)
 //same with put and delete
 router.route('/:id').put(updateCard).delete(deleteCard)
 
-
 module.exports = router

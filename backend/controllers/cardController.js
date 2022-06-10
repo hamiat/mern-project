@@ -6,7 +6,7 @@ const asyncHandler = require('express-async-handler')
 const getCards = asyncHandler(async (req, res) => {
     if(!req.body.text) {
         res.status(400)
-        throw new Error('Please ass a text field.')
+        throw new Error('Please add a text field.')
     }
 
     res.status(200).json({message: 'Get Card'})
